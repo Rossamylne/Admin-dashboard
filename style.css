@@ -56,8 +56,13 @@ header {
     font-weight: 500;
 }
 
-
-
+#first-header-container img, .search-container > img {
+    transition: 0.2s ease-out;
+}
+#first-header-container img:hover, .search-container > img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 #second-header-container {
     display: grid;
@@ -93,7 +98,18 @@ header {
     color: #FFC9B9;
     font-size: 1em;
     font-weight: 550;
+    transition: 0.2s ease-out;
 }
+.button-zone > button:hover {
+    background: #4C956C;
+    cursor: pointer;
+}
+
+
+
+
+
+
 .navbar {
     background-color: #2C6E49;
     grid-area: 1 / 1 / -1 / 2;
