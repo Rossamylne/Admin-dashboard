@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100vh;
+}
+header {
+    background-color: #FFC9B9;
+    grid-area: 1 / 2 / 2 / -1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 15px;
+    gap: 20px;
+}
+#first-header-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+#first-header-container img {
+    width: 1.5em;
+}
+.search-container {
+    display: flex;
+    gap: 7px;
+}
+.search-container > img {
+    flex: 1;
+    height: 1.5em;
+}
+.search-container > input {
+    flex: 10;
+    border-radius: 5px;
+    border: none;
+    background: #FEFEE3;
+    padding: 2px 5px;
+}
+.search-container > input:focus {
+    outline-style: none;
+}
+.account-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+
+
+#second-header-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.hello-zone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.hello-zone > img {
+    height: 3em;
+}
+#username {
+    font-size: 1.4em;
+}
+.button-zone {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+.button-zone > button {
+    border: none;
+    border-radius: 11px;
+    background: #2C6E49;
+    flex: 1;
+    height: 80%;
+    color: #FFC9B9;
+    font-size: 1em;
+    font-weight: 550;
+}
+.navbar {
+    background-color: #2C6E49;
+    grid-area: 1 / 1 / -1 / 2;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    padding: 10px;
+    gap: 40px;
+}
+.navbar > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.navbar-sub-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+.navbar-sub-container > img {
+    height: 1.4em;
+    filter: invert(100%);
+}
+#dashboard-icon {
+    height: 2.5em;
+}
+#dashboard-title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+
+
+
+.content {
+    background-color: #DDDDDD;
+    grid-area: 2 / 2 / -1 / -1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+.main-card-container {
+    grid-area: 1 / 1 / 2 / -2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+
+}
+#content-title {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: rgb(39, 39, 39);
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    flex: 1;
+}
+.card {
+    box-sizing: border-box;
+    background: #FEFEE3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px  30px;
+    justify-content: space-around;
+    border-left: 10px solid #2C6E49;
+}
+.card-description {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+.card-icon {
+    align-self: flex-end;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.card-icon > img {
+    height: 1.6em;
+    font-weight: 200;
+}
+#card-text {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #313131;
+}
+
+.main-news-container {
+    grid-area: 1 / -2 / 2 / -1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+}
+.global {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.news-container {
+    flex: 1;
+    background: #FEFEE3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 15px;
+}
+
+.annonce-container {
+    display: flex;
+    flex-direction: column;
+}
+#annonce-title {
+    font-size: 0.9em;
+    font-weight: 600;
+}
+#annonce-desc {
+    font-size: 0.8em;
+    color: #313131;
+}
+.separation-bar {
+    width: 100%;
+    border: 1px solid  #636363;
+}
+.trending-info {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+}
+.trending-info > img {
+    height: 2.2em;
+}
